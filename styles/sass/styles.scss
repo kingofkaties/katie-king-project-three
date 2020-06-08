@@ -55,7 +55,7 @@ h3 {
     font-size: 4rem;
 }
 
-// effects
+// LAYOUT
 
 body {
     text-shadow: 1px 0 3px black;
@@ -69,8 +69,6 @@ body {
     text-shadow: 0 0 50px black;
 }
 
-// LAYOUT
-
 header {
     display: flex;
     align-items: center;
@@ -79,6 +77,10 @@ header {
 
 h1 {
     margin-right: 20px;
+}
+
+p {
+    margin: 30px 0;
 }
 
 // VISIBILITY
@@ -98,8 +100,7 @@ h1 {
     0% {
         transform: scale(0.3);
     }
-
-    90% {
+    95% {
         transform: scale(1);
     }
     100% {
@@ -124,8 +125,4 @@ a {
         text-decoration: overline underline wavy;
         outline: none;
     }
-}
-
-p {
-    margin: 30px 0;
 }

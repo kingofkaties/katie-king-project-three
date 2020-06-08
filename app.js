@@ -43,12 +43,10 @@ beStill.toggleTheme = [
     },
 ];
 
+// set initial values to 0
 beStill.breathLength = 0;
 beStill.colorSelect = 0;
 beStill.themeSelect = 0;
-
-// $('.inhale').text(beStill.toggleBreath[0]);
-// $('.toggle').css('color', beStill.toggleColor[0].colorHex);
 
 // hide and show settings/animation
 beStill.showAnimation = function () {
@@ -90,7 +88,8 @@ beStill.cycleColor = function() {
         beStill.colorSelect += 1;
         if (beStill.colorSelect === beStill.toggleColor.length) { beStill.colorSelect = 0 };
         $(this).text(beStill.toggleColor[beStill.colorSelect].colorText);
-        $('.toggle').css('color', beStill.toggleColor[beStill.colorSelect].colorHex)
+        // change color for all anchor tags
+        $('a').css('color', beStill.toggleColor[beStill.colorSelect].colorHex)
     }
 )};
 

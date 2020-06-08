@@ -303,6 +303,10 @@ h1 {
   margin-right: 20px;
 }
 
+p {
+  margin: 30px 0;
+}
+
 .animation {
   border: 15px solid #ECEBE4;
   opacity: 0.5;
@@ -321,7 +325,7 @@ h1 {
     -webkit-transform: scale(0.3);
             transform: scale(0.3);
   }
-  90% {
+  95% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -336,7 +340,7 @@ h1 {
     -webkit-transform: scale(0.3);
             transform: scale(0.3);
   }
-  90% {
+  95% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -362,8 +366,4 @@ a:hover, a:focus {
   -webkit-text-decoration: overline underline wavy;
           text-decoration: overline underline wavy;
   outline: none;
-}
-
-p {
-  margin: 30px 0;
 }
