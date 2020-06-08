@@ -67,6 +67,7 @@ body {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
+    text-shadow: 0 0 50px black;
 }
 
 // LAYOUT
@@ -74,7 +75,11 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+h1 {
+    margin-right: 20px;
 }
 
 // VISIBILITY
@@ -86,7 +91,7 @@ header {
     width: 50vh;
     height: 50vh;
     border-radius: 50%;
-    animation: breathe 3s ease-in infinite;
+    animation: breathe 4s ease-in infinite;
     animation-direction: alternate;
 }
 
@@ -96,11 +101,11 @@ header {
         // width: 10vw;
         // height: 10vw;
     }
-    10% {
-        transform: scale(0.3);
-        // width: 10vw;
-        // height: 10vw;
-    }
+    // 10% {
+    //     transform: scale(0.3);
+    //     // width: 10vw;
+    //     // height: 10vw;
+    // }
     90% {
         transform: scale(1);
         // width: 50vw;

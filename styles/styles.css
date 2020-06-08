@@ -273,6 +273,7 @@ body {
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
+  text-shadow: 0 0 50px black;
 }
 
 header {
@@ -282,9 +283,12 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+h1 {
+  margin-right: 20px;
 }
 
 .animation {
@@ -294,18 +298,14 @@ header {
   width: 50vh;
   height: 50vh;
   border-radius: 50%;
-  -webkit-animation: breathe 3s ease-in infinite;
-          animation: breathe 3s ease-in infinite;
+  -webkit-animation: breathe 4s ease-in infinite;
+          animation: breathe 4s ease-in infinite;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
 }
 
 @-webkit-keyframes breathe {
   0% {
-    -webkit-transform: scale(0.3);
-            transform: scale(0.3);
-  }
-  10% {
     -webkit-transform: scale(0.3);
             transform: scale(0.3);
   }
@@ -321,10 +321,6 @@ header {
 
 @keyframes breathe {
   0% {
-    -webkit-transform: scale(0.3);
-            transform: scale(0.3);
-  }
-  10% {
     -webkit-transform: scale(0.3);
             transform: scale(0.3);
   }

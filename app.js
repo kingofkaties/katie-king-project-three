@@ -2,9 +2,10 @@ const beStill = {};
 
 // array to hold length of breaths
 beStill.toggleBreath = [
+    4,
+    6,
     8,
-    10,
-    12
+    10
 ];
 
 // array to hold toggle colours
@@ -26,7 +27,7 @@ beStill.toggleColor = [
 // array to hold themes
 beStill.toggleTheme = [
     {
-        name: "simplicity"
+        name: "empty"
     },
     {
         name: "leaves",
