@@ -47,8 +47,8 @@ beStill.breathLength = 0;
 beStill.colorSelect = 0;
 beStill.themeSelect = 0;
 
-$('.inhale').text(beStill.toggleBreath[0]);
-$('.toggle').css('color', beStill.toggleColor[0].colorHex);
+// $('.inhale').text(beStill.toggleBreath[0]);
+// $('.toggle').css('color', beStill.toggleColor[0].colorHex);
 
 // hide and show settings/animation
 beStill.showAnimation = function () {
@@ -57,7 +57,7 @@ beStill.showAnimation = function () {
         // toggle class on settings & animation
         $('.showHide')
             .toggleClass('active')
-            .toggleClass('dormant');       
+            .toggleClass('dormant');
         // change text inside activate button
         if ($(this).text() === 'begin') {
             $(this).text('adjust');
@@ -103,8 +103,7 @@ beStill.cycleTheme = function() {
         if (beStill.themeSelect === beStill.toggleTheme.length) { beStill.themeSelect = 0 };
         $(this).text(beStill.toggleTheme[beStill.themeSelect].name);
         console.log(beStill.toggleTheme[beStill.themeSelect].name);
-        $('body')
-            .css('background-image', `url('images/${beStill.toggleTheme[beStill.themeSelect].image}')`)
+        $('body').css('background-image', `url('images/${beStill.toggleTheme[beStill.themeSelect].image}')`);
     }
 )};
 
@@ -113,7 +112,6 @@ beStill.init = function() {
     beStill.cycleColor();
     beStill.cycleTheme();
     beStill.cycleInhale();
-    
 }
 
 $(document).ready(function() {
