@@ -1,6 +1,5 @@
 @import "./global/setup";
-@import "./global/meditate";
-@import "./global/settings";
+@import "./global/mediaQueries";
 
 // GENERAL STYLES
 
@@ -98,23 +97,13 @@ h1 {
 @keyframes breathe {
     0% {
         transform: scale(0.3);
-        // width: 10vw;
-        // height: 10vw;
     }
-    // 10% {
-    //     transform: scale(0.3);
-    //     // width: 10vw;
-    //     // height: 10vw;
-    // }
+
     90% {
         transform: scale(1);
-        // width: 50vw;
-        // height: 50vw;
     }
     100% {
         transform: scale(1);
-        // width: 50vw;
-        // height: 50vw;
     }
 }
 
@@ -130,4 +119,13 @@ h1 {
 
 a {
     text-decoration: none;
+    &:hover,
+    &:focus {
+        text-decoration: overline underline wavy;
+        outline: none;
+    }
+}
+
+p {
+    margin: 30px 0;
 }
