@@ -260,14 +260,39 @@ h3 {
 
 body {
   text-shadow: 1px 0 3px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100vh;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .animation {
   border: 15px solid #ECEBE4;
   opacity: 0.5;
   margin: 0 auto;
-  width: 50vw;
-  height: 50vw;
+  width: 50vh;
+  height: 50vh;
   border-radius: 50%;
   -webkit-animation: breathe 3s ease-in infinite;
           animation: breathe 3s ease-in infinite;
